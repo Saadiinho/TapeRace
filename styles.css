@@ -1,0 +1,97 @@
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    --color-primary: #5C95FF;
+    --color-secondary: #8BBEFF;
+    --color-tertiary: #B9E6FF; 
+    --color-bg: #F3FBFF;
+    background-color: var(--color-bg);
+}
+
+/* Mise en forme des titres */
+h1, .primary{
+    font-size: 60px;
+    font-weight: 900;
+    color: var(--color-primary);
+}
+.primary{
+    font-size: 40px;
+}
+
+main{
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.secondary{
+    color: var(--color-secondary);
+}
+.bg-card{
+    background-color: var(--color-primary);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.fs-5{
+    font-weight: bold;
+}
+.optionSource{
+    background-color: var(--color-bg);
+    border-radius:  .75rem;
+    padding: 2rem;
+}
+.text-bg-success{
+    display: inline-block;
+}
+.text-bg-danger{
+    display: inline-block;
+}
+#result{
+    padding: .25rem;
+}
+.btn-primary{
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+.btn-primary:hover{
+    background-color: var(--color-bg);
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+#inputEcriture {
+    font-size: 18px;
+    color: var(--color-primary);
+}
+
+footer{
+    background-color: var(--color-primary);
+    margin-bottom: 0;
+}
+
+/** 
+ * Responsive
+ */
+
+
+ /* En dessous de 1200 px */
+@media screen and (max-width: 1200px) {
+    main {
+        width: 60%;
+        padding: 30px;
+    }
+}
+
+
+/* En dessous de 800 px */
+@media screen and (max-width: 800px) {
+    main {
+        width: 90%;
+        padding: 10px;
+    }
+}
